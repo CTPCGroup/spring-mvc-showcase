@@ -71,3 +71,5 @@ blueman-applet 13.51.15 WARNING  DiscvManager:109 update_menuitems: warning: Ada
 thunar-volman: Unsupported USB device type "usb".
 
 (wrapper-2.0:677): Gdk-CRITICAL **: 14:03:24.924: Window 0x559e31b35000 has not been made visible in GdkSeatGrabPrepareFunc
+
+(wrapper-2.0:677): Gdk-CRITICAL **: 15:16:51.379: Window 0x559e31b35000 has not been made visible in GdkSeatGrabPrepareFunc
