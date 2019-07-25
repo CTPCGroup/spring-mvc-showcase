@@ -1,0 +1,542 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    font-family: sans-serif;
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*------- Calling FT hosted Comcast Fonts --------*/
+/*/ XfinityBrownWeb-Bold /*/
+@font-face {
+  font-family: 'XfinityBrownWeb-Bold';
+  src: url('https://cdn.flashtalking.com/93411/fonts/57cfca5154c2481062a796915c0bdab3ed0f6fd6.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.flashtalking.com/93411/fonts/d4b3e162de98cb3f43636cde35fcc00e89f83fdf.woff2') format('woff2'),
+   url('https://cdn.flashtalking.com/93411/fonts/1ccbf188da2dd4565c47b990c13da23365f1251e.woff') format('woff'); /* Legacy iOS */
+}
+
+/*/ XfinityBrownWeb-Light /*/
+@font-face {
+  font-family: 'XfinityBrownWeb-Light';
+  src: url('https://cdn.flashtalking.com/93411/fonts/0cd2571b390e50c7237ba186315923424f49f8ad.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.flashtalking.com/93411/fonts/24941008179701317ed1b84ece7f42ed6a90c2d4.woff2') format('woff2'),
+   url('https://cdn.flashtalking.com/93411/fonts/74e41835de34c8deb73e1f979e66fe374ac4ccb9.woff') format('woff'); /* Legacy iOS */
+}
+
+/*/ XfinityBrownWeb-LightItalic /*/
+@font-face {
+  font-family: 'XfinityBrownWeb-LightItalic';
+  src: url('https://cdn.flashtalking.com/93411/fonts/289be44322768fce8ee7f2f396e63bb7bd4741eb.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.flashtalking.com/93411/fonts/ee87a989f489f04b7ce40ad162c93a2681c95db1.woff2') format('woff2'),
+   url('https://cdn.flashtalking.com/93411/fonts/196109e48488e6306e22a4d01083b2cf62f52247.woff') format('woff'); /* Legacy iOS */
+}
+
+/* ---------------------------------- Font Style Classses ---------------------------------- */
+
+.xsb { font-family : 'XfinityBrownWeb-Bold'; font-style:normal;}
+.xli { font-family : 'XfinityBrownWeb-Light'; font-style: normal;}
+.xsli { font-family : 'XfinityBrownWeb-LightItalic'; font-style: normal;}
+
+
+/* ---------------------------------- Styles ---------------------------------- */
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+div, img, ft-dynamic {
+   position : absolute;
+}
+
+#frame1BackgroundImage, #frame3DeviceContent1, #frame3DeviceContent2{
+    background-size: 100% 100%;
+}
+
+#container {
+    width: 726px;
+    height: 88px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    border: 1px solid #808080;
+    /*background: url(f.jpg);*/
+}
+
+#frame1BackgroundImage img{
+    position: absolute;
+    width: 728px;
+    height: 90px;
+
+}
+
+#frame3BackgroundImage {
+    position: absolute;
+    top: 0;
+    width: 728px;
+    height: 90px;
+    background-color: #ebedef;
+    /*background: url(f.jpg);*/
+}
+
+#bottomBar {
+    height: 1000px;
+    width: 1000px;
+    background-color: #000;
+    transform: rotate(35deg);
+    left: 542px;
+    top: -220px;
+    z-index: 0;
+}
+
+#logo {
+    width: 60px;
+    height: 20px;
+    top: 8px;
+    left: 660px;
+    z-index: 12;
+}
+
+#frame1CopyA,
+#frame1CopyB,
+#frame2Copy,
+#frame2CopyB {
+    position: relative;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    padding: 0px 11px;
+    font-size: 17px;
+    width: 262px;
+    color: white;
+}
+
+#frame1CopyA {
+    margin-top: 18px;
+}
+
+#frame3CopyHolder,
+#frame4CopyHolder,
+#frame5CopyHolder,
+#BoltOnHolder,
+#endFrameHeaderHolder { /* for centering copy vertically */
+    top: 0px;
+    height: 90px;
+    display: table;
+}
+#BoltOnHolder{
+    width: 70px;
+    left: 337px;
+}
+#frame4CopyMask,
+#frame5CopyMask {
+    bottom: 0px;
+    height: 71px;
+    width: 320px;
+    overflow: hidden;
+    /*background-color: rgba(0, 0,0,0.5);*/
+}
+
+#endFrameHeaderHolder {
+    top: 0px;
+    /* line-height: 0.8; */
+}    
+
+#frame3Copy,
+#frame4Copy,
+#frame5Copy,
+#endFrameHeader {
+position: relative;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    padding-left: 12px;
+    width: 300px;
+}
+
+
+#frame5CopyHolder{
+    height: 60px;
+}
+
+#frame5Copy{
+    letter-spacing: -0.5px;
+    font-size: 24px;
+}
+#endFrameHeader {
+    line-height: 1.3;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+}
+
+#device{
+    top: 3px;
+    left: 319px;
+    width: 151px;
+    height: 109px;
+    background: url(COMCAST_6747_laptop_728x90.png);
+}
+
+#screenMask {
+    top: 4px;
+    left: 6px;
+    width: 138px;
+    height: 102px;
+    overflow: hidden;
+}
+
+#deviceGlare {
+    width: 110px;
+    height: 122px;   
+    background: url(deviceGlare.png);
+}
+
+#frame3DeviceContent1 img,
+#frame3DeviceContent2 img {
+    position: absolute;
+    width: 138px;
+    height: 102px;
+}
+
+#endFrame {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#endOfferHolder {
+    top: -16px;
+    left: 199px;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#endOffer {
+    width: 119px;
+    position: relative;
+}
+
+.offerTitle {
+    text-align: center;
+    font-size: 11px;
+    position: relative;
+    letter-spacing: .2px;
+    margin: 8px 0 2px;
+}
+
+.priceHolder {
+    position: relative;
+    width: 100%;
+    margin-left: -9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.offerPrice {
+    position: relative;
+    margin: 0 0 0 8px;
+    font-size: 49px;
+    letter-spacing: -1px;
+}
+
+.sup {
+    top: -22px;
+    font-size: 37%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    margin-right: 2px;
+}
+
+.rightContent {
+    position: relative;
+    width: 20%;
+    height: 46px;
+    top: 0px;
+    margin-left: 0px;
+}
+
+.offerCents {
+    font-size: 20px;
+}
+
+.offerEach {
+    top: 4px;
+    margin-left: 2px;
+    font-size: 15px;
+    display: none;
+}
+
+.offerTerms {
+    position: absolute;
+    top: 18px;
+    width: 60px;
+    font-size: 10px;
+    padding-left: 0px;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+.offerAgrmt {
+    position: relative;
+    margin: -7px 0 0 0px;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+.offerBottomBar {
+    border-left: solid black 1px;
+    height: 74px;
+    top: 8px;
+    left: -10px;
+    position: relative;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+}
+
+.offerBoltOn {
+    position: relative;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    font-size: 10px;
+    width: 127px;
+}
+
+#phoneNumber {
+    position: absolute;
+    top: 43px;
+    left: 620px;
+    width: 100px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: -.5px;
+}
+
+#ctaBg {
+    top: 30px;
+    left: 538px;
+    width: 90px;
+    height: 24px;
+    overflow: hidden;
+    background-color: #3399cc;
+    border-radius: 45px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0.3), rgba(204, 204, 204, 0));
+    background-position: -100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    line-height: 11px;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+    padding: 3px 0 0 1px;
+}
+
+#legalDisclaimer{
+    top: 64px;
+    left: 520px;
+    width: 200px;
+    text-align: right;
+    position: absolute;
+    letter-spacing: -0.3px;
+    color: #ebedef;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+/*------------------ JS Switching Classes ------------------- */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.offerAgrmt--small {
+    margin: -10px 0 0 0px;
+    font-size: 8px;
+}
+
+.offerBoltOn--small {
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+.offerTitle--small {
+    margin-bottom: 0px;
+}
+
+.offerPrice--small {
+    font-size: 42px;
+}
+
+.offerCents--small {
+    font-size: 17px;
+    top: 3px;
+}
+
+.sup--small {
+    top: -20px;
+}
+
+.offerTerms--small {
+    top: 17px;
+}
+Ç*iŠ®      ]2E¾]2EÉ@™KU]2F!   <    :https://cdn.flashtalking.com/93411/2535202/assets/style.css necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAgAAgAAAAAAAAAAAAAAAAAAAAEAMQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAjHMIIIwzCCB6ugAwIBAgIQDUW6QGE8x+fQRFUqAXg5uzANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTkwMjE1MDAwMDAwWhcNMjAwNTE2MTIwMDAwWjBkMQswCQYDVQQGEwJHQjEPMA0GA1UEBxMGTG9uZG9uMSUwIwYDVQQKExxTaW1wbGljaXR5IE1hcmtldGluZyBMaW1pdGVkMR0wGwYDVQQDExRjZG4uZmxhc2h0YWxraW5nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALe97Ke3SpMxBCCweNoQZdZY3Uk939AzJEzfyUXC8HQZOkOxERPP7I4lHPsAUuuBRGZ8QEr4MdiDPpgOH2U71i8g6j7FlXNoBhgP3tMnMX5ypHIh1i4I9Ga44HEITJTgokUgjmkaYu0JAU7k7c2oBX350bYUQQs3x0P2Gdt1lsaaUZw+uDd+seuCsnks/76u9qq5jtDuVu4qd1mN8ATiSPvbXQZ1vRBV/4/T07LDTeD0976ow5Df5xxHQeIG5R4g0w8jywUuH5eIX5p6KXFYhQKJfgQSy4ao+ZpBI2NgjP+sWYlfjK6Ma68kFNkIWgA3CNMbxVsi7DGFGeXxlTWARm8CAwEAAaOCBYYwggWCMB8GA1UdIwQYMBaAFA+AYRyCMWHVLyjnjUY4tCzhxtniMB0GA1UdDgQWBBSp0WjcWWKcrqZcqRztHEDgQosJHDCCAkgGA1UdEQSCAj8wggI7ghRjZG4uZmxhc2h0YWxraW5nLmNvbYISYi5mbGFzaHRhbGtpbmcuY29tghZzdGF0OC5mbGFzaHRhbGtpbmcuY29tghZzdGF0NC5mbGFzaHRhbGtpbmcuY29tghdjYXBjZG4uZmxhc2h0YWxraW5nLmNvbYISZC5mbGFzaHRhbGtpbmcuY29tghZzdGF0Ny5mbGFzaHRhbGtpbmcuY29tghZzdGF0NS5mbGFzaHRhbGtpbmcuY29tghNhc3NldHMuZnRzdGF0aWMuY29tghdzZWN1cmUuZmxhc2h0YWxraW5nLmNvbYIYc3RhdDI0MC5mbGFzaHRhbGtpbmcuY29tghZzdGF0Mi5mbGFzaHRhbGtpbmcuY29tghZpbWdjZi5mbGFzaHRhbGtpbmcuY29tghZzdGF0MS5mbGFzaHRhbGtpbmcuY29tghVzM2NmLmZsYXNodGFsa2luZy5jb22CEmYuZmxhc2h0YWxraW5nLmNvbYIUYWNvLmZsYXNodGFsa2luZy5jb22CFnN0YXQzLmZsYXNodGFsa2luZy5jb22CGHJlZGJsdWUuZmxhc2h0YWxraW5nLmNvbYIWc3RhdDYuZmxhc2h0YWxraW5nLmNvbYIQY2RuLmZ0c3RhdGljLmNvbYIUaW1nLmZsYXNodGFsa2luZy5jb22CFGFrYS5mbGFzaHRhbGtpbmcuY29tghVzdGF0LmZsYXNodGFsa2luZy5jb22CEmEuZmxhc2h0YWxraW5nLmNvbTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6AtoCuGKWh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9zc2NhLXNoYTItZzYuY3JsMC+gLaArhilodHRwOi8vY3JsNC5kaWdpY2VydC5jb20vc3NjYS1zaGEyLWc2LmNybDBMBgNVHSAERTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20vQ1BTMAgGBmeBDAECAjB8BggrBgEFBQcBAQRwMG4wJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBGBggrBgEFBQcwAoY6aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMlNlY3VyZVNlcnZlckNBLmNydDAJBgNVHRMEAjAAMIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgDuS723dc5guuFCaR+r4Z5mow9+X7By2IMAxHuJeqj9ywAAAWjy9VeNAAAEAwBHMEUCIEDNa9obCzHz3QOK/W4xw7BRridquT4GCFqrE16HO4k5AiEAhC3qi3BAV1TZZBUkNIXu/2EXmDmzsEeSX4Tl8uB7/zUAdgBep3P531bA57U2SH3QSeAyepGaDIShEhKEGHWWgXFFWAAAAWjy9VemAAAEAwBHMEUCIQCTrpB57d+TANrsECykKABJuiz9oAtzBZ5h/NTWTEx3ywIgPKP6fg0mHIqMxmgvIBhrdgdiiNEHhzRLtTLO3iFEOtoAdwBWFAaaL9fC7NP14b1Esj7HRna5vJkRXMDvlJhV1onQ3QAAAWjy9VinAAAEAwBIMEYCIQDNv3JTB9oz514HCqakXVPqwnmTc7WqcXWMLRXGrHZ0DgIhAOhCLwuUeUMS6/y0dLL3OVFDV0VtXe05w/mMC5cTDNbBMA0GCSqGSIb3DQEBCwUAA4IBAQA+kcXGDb+d1SXb+UsDHzIVtDrWyX2xCgvnUcHA2wvU+/n6MKJ5+1ZkbDCjMjR1KvEnlXuGDYtZN9XI923Jqv1EiF0l3TAE0bs3VOhfw2IOO9LzgY02uEJ0dBKN7hbgc963JDrpJ4Sb0oFAPQlWaFNYQBHQ8k0FVhPAtFhLDiYETTha7+CKtH60mzSUnaa7hPY6AR8E0je7EevlUbclfQmZHVM0QakiIziLfs7UkUcJxUP5xrt1DkIbXdDbeFFmrhc3XJRzsLNdEJ+ipBuYBqGydN3gmmTti101exrDbxmcg/cjfok1PCbnulYg9rNdpzvz8T9q1TCOdSi/4OFmi70WwDAAAwAAAAABAQAAAAAAAARQMjU2AAAADlJTQS1QU1MtU0hBMjU2AZWfsWVlF0h/q5vYkTvlMZeudM2lzS9HP5b18Lf/9ixoAAAAA2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAACMcwggjDMIIHq6ADAgECAhANRbpAYTzH59BEVSoBeDm7MA0GCSqGSIb3DQEBCwUAME0xCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxJzAlBgNVBAMTHkRpZ2lDZXJ0IFNIQTIgU2VjdXJlIFNlcnZlciBDQTAeFw0xOTAyMTUwMDAwMDBaFw0yMDA1MTYxMjAwMDBaMGQxCzAJBgNVBAYTAkdCMQ8wDQYDVQQHEwZMb25kb24xJTAjBgNVBAoTHFNpbXBsaWNpdHkgTWFya2V0aW5nIExpbWl0ZWQxHTAbBgNVBAMTFGNkbi5mbGFzaHRhbGtpbmcuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt73sp7dKkzEEILB42hBl1ljdST3f0DMkTN/JRcLwdBk6Q7ERE8/sjiUc+wBS64FEZnxASvgx2IM+mA4fZTvWLyDqPsWVc2gGGA/e0ycxfnKkciHWLgj0ZrjgcQhMlOCiRSCOaRpi7QkBTuTtzagFffnRthRBCzfHQ/YZ23WWxppRnD64N36x64KyeSz/vq72qrmO0O5W7ip3WY3wBOJI+9tdBnW9EFX/j9PTssNN4PT3vqjDkN/nHEdB4gblHiDTDyPLBS4fl4hfmnopcViFAol+BBLLhqj5mkEjY2CM/6xZiV+MroxrryQU2QhaADcI0xvFWyLsMYUZ5fGVNYBGbwIDAQABo4IFhjCCBYIwHwYDVR0jBBgwFoAUD4BhHIIxYdUvKOeNRji0LOHG2eIwHQYDVR0OBBYEFKnRaNxZYpyuplypHO0cQOBCiwkcMIICSAYDVR0RBIICPzCCAjuCFGNkbi5mbGFzaHRhbGtpbmcuY29tghJiLmZsYXNodGFsa2luZy5jb22CFnN0YXQ4LmZsYXNodGFsa2luZy5jb22CFnN0YXQ0LmZsYXNodGFsa2luZy5jb22CF2NhcGNkbi5mbGFzaHRhbGtpbmcuY29tghJkLmZsYXNodGFsa2luZy5jb22CFnN0YXQ3LmZsYXNodGFsa2luZy5jb22CFnN0YXQ1LmZsYXNodGFsa2luZy5jb22CE2Fzc2V0cy5mdHN0YXRpYy5jb22CF3NlY3VyZS5mbGFzaHRhbGtpbmcuY29tghhzdGF0MjQwLmZsYXNodGFsa2luZy5jb22CFnN0YXQyLmZsYXNodGFsa2luZy5jb22CFmltZ2NmLmZsYXNodGFsa2luZy5jb22CFnN0YXQxLmZsYXNodGFsa2luZy5jb22CFXMzY2YuZmxhc2h0YWxraW5nLmNvbYISZi5mbGFzaHRhbGtpbmcuY29tghRhY28uZmxhc2h0YWxraW5nLmNvbYIWc3RhdDMuZmxhc2h0YWxraW5nLmNvbYIYcmVkYmx1ZS5mbGFzaHRhbGtpbmcuY29tghZzdGF0Ni5mbGFzaHRhbGtpbmcuY29tghBjZG4uZnRzdGF0aWMuY29t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 request-method GET response-head HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET
+Access-Control-Expose-Headers: Accept-Ranges, Content-Encoding, Content-Length, Content-Range
+Access-Control-Max-Age: 3000
+Last-Modified: Sat, 02 Mar 2019 03:11:13 GMT
+Content-Type: text/css
+X-FT-Origin: us
+ETag: W/"3d260c303ba034231e9c75f6ad492d53"
+X-Varnish: 636125186 584908872
+Accept-Ranges: bytes
+Content-Length: 9715
+Cache-Control: max-age=99
+Expires: Fri, 19 Jul 2019 22:37:23 GMT
+Date: Fri, 19 Jul 2019 22:35:44 GMT
+Server: Flashtalking (AKA)
+ original-response-headers Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET
+Access-Control-Expose-Headers: Accept-Ranges, Content-Encoding, Content-Length, Content-Range
+Access-Control-Max-Age: 3000
+Last-Modified: Sat, 02 Mar 2019 03:11:13 GMT
+Content-Type: text/css
+X-FT-Origin: us
+ETag: W/"3d260c303ba034231e9c75f6ad492d53"
+X-Varnish: 636125186 584908872
+Accept-Ranges: bytes
+Content-Length: 9715
+Cache-Control: max-age=99
+Expires: Fri, 19 Jul 2019 22:37:23 GMT
+Date: Fri, 19 Jul 2019 22:35:44 GMT
+Connection: keep-alive
+Server: Flashtalking (AKA)
+ uncompressed-len 0 net-response-time-onstart 1301 net-response-time-onstop 1304   %ó
